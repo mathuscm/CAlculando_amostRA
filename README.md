@@ -3,11 +3,11 @@ Programa para visualizar a margem de participação de uma pesquisa
 
 # Contexto
 
-    Uma ONG que trabalha com preservação ambiental precisa realizar uma pesquisa
+Uma ONG que trabalha com preservação ambiental precisa realizar uma pesquisa
 com o público para entender qual a percepção deles em relação às ações que os 
 prefeiros de cada cidade estão realizando sobre esse assunto.
 
-    Para ajudar a verificar quantas pessoas precisam ser entrevistadas em cada uma
+Para ajudar a verificar quantas pessoas precisam ser entrevistadas em cada uma
 das capitais do Brasil e ajudar a pesquisa a ter uma boa amostragem, vamos montar 
 um código na linha de comando que faça esse cálculo. Será informado a população
 da cidade e a margem de erro esperada. 
