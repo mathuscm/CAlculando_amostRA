@@ -100,8 +100,8 @@ def menu_regiao():
                 for chave, valor in sul.items():
                     print(f'{chave} : {valor}')
 
-                    opcao5 = input('Digite em qual estado a pesquisa está sendo realizada: ')
-                    estado_selec3 = sul.get(opcao5)
+                opcao5 = input('Digite em qual estado a pesquisa está sendo realizada: ')
+                estado_selec3 = sul.get(opcao5)
 
                 if estado_selec3:
                     print(f'A pesquisa está sendo realizada na região: {regiao_selec}, no estado {estado_selec3}')
@@ -120,8 +120,8 @@ def menu_regiao():
                 for chave, valor in sudeste.items():
                     print(f'{chave} : {valor}')
 
-                    opcao6 = input('Digite em qual estado a pesquisa está sendo realizada: ')
-                    estado_selec4 = sudeste.get(opcao6)
+                opcao6 = input('Digite em qual estado a pesquisa está sendo realizada: ')
+                estado_selec4 = sudeste.get(opcao6)
 
                 if estado_selec4:
                     print(f'A pesquisa está sendo realizada na região: {regiao_selec}, no estado {estado_selec4}')
