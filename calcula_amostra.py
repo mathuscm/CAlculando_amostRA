@@ -1,29 +1,26 @@
 # solicitar o estado o qual será realizado a pesquisa
 def menu_regiao():
-    while True:
-        menu = {
-            '1': 'Norte',
-            '2': 'Nordeste',
-            '3': 'Centro-Oeste',
-            '4': 'Sul',
-            '5': 'Sudeste'
-        }
         
-        # percorrendo as opções 
-        for chave, valor in menu.items():
-            print(f' {chave} : {valor}')
+    menu = {
+        1: 'Norte',
+        2: 'Nordeste',
+        3: 'Centro-Oeste',
+        4: 'Sul',
+        5: 'Sudeste'     
+        }   
+        
+    # percorrendo as opções do menu
+    for chave, valor in menu.items():
+        print(f' {chave} : {valor}')    
 
-        opcao = input('Selecione em qual REGIÃO a pesquisa está sendo realizada: ')
+    # iniciando o loop para verificar as interações dos menus subsequentes
+    while True:
+        opcao = int(input('Selecione em qual REGIÃO a pesquisa está sendo realizada: '))
         regiao_selec = menu.get(opcao)
 
         if regiao_selec:
-            print('A região é: ', regiao_selec)
-            break
-        else:
-            print('Digite uma opção válida')
-        
-            if regiao_selec == 1:
-                
+            
+            if opcao == 1:
                 norte = {
                             '1': 'AC - Acre',
                             '2': 'AP - Amapá',
@@ -33,6 +30,8 @@ def menu_regiao():
                             '6': 'RO - Rondônia',
                             '7': 'TO - Tocantins'
                 }
+                
+                
 
                 for chave, valor in norte.items():
                     print(f'{chave} : {valor}')
@@ -45,8 +44,8 @@ def menu_regiao():
                     break
                 else:
                     print('Digite uma opção válida')
-
-            if regiao_selec == 2:
+            
+            if opcao == 2:
                 nordeste = {
                             '1': 'AL - Alagoas',
                             '2': 'BA - Bahia',
@@ -71,7 +70,7 @@ def menu_regiao():
                 else:
                     print('Digite uma opção válida')
 
-            if regiao_selec == 3:
+            if opcao == 3:
                 centro_oeste = {
                             '1': 'DF - Distrito Federal',
                             '2': 'GO - Goiás',
@@ -91,7 +90,7 @@ def menu_regiao():
                 else:
                     print('Digite uma opção válida')
 
-            if regiao_selec == 4:
+            if opcao == 4:
                 sul = {
                             '1': 'PR - Curitiba',
                             '2': 'RS - Rio Grande do Sul',
@@ -110,7 +109,7 @@ def menu_regiao():
                 else:
                     print('Digite uma opção válida')
 
-            if regiao_selec == 5:
+            if opcao == 5:
                 sudeste = {
                             '1': 'ES - Espírito Santo',
                             '2': 'MG - Minas Gerais',
@@ -129,7 +128,8 @@ def menu_regiao():
                     break
                 else:
                     print('Digite uma opção válida')
-                    
+        else:
+            print('Digite uma opção válida')            
 
 # solicitar dados para calcular adesão/evasão da pesquisa
 def calculando_dados():
@@ -149,8 +149,8 @@ def calculando_dados():
 
 
 # execução das funções
-regiao = menu_regiao()
-dados = calculando_dados()
+menu_regiao()
+calculando_dados()
 
 
     
